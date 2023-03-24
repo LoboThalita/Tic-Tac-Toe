@@ -1,0 +1,15 @@
+C:\Users\thalita.paz\Documents\Exercicios POO\Hash\Hash\bin\Debug\net6.0\Hash.exe
+C:\Users\thalita.paz\Documents\Exercicios POO\Hash\Hash\bin\Debug\net6.0\Hash.deps.json
+C:\Users\thalita.paz\Documents\Exercicios POO\Hash\Hash\bin\Debug\net6.0\Hash.runtimeconfig.json
+C:\Users\thalita.paz\Documents\Exercicios POO\Hash\Hash\bin\Debug\net6.0\Hash.dll
+C:\Users\thalita.paz\Documents\Exercicios POO\Hash\Hash\bin\Debug\net6.0\Hash.pdb
+C:\Users\thalita.paz\Documents\Exercicios POO\Hash\Hash\obj\Debug\net6.0\Hash.csproj.AssemblyReference.cache
+C:\Users\thalita.paz\Documents\Exercicios POO\Hash\Hash\obj\Debug\net6.0\Hash.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thalita.paz\Documents\Exercicios POO\Hash\Hash\obj\Debug\net6.0\Hash.AssemblyInfoInputs.cache
+C:\Users\thalita.paz\Documents\Exercicios POO\Hash\Hash\obj\Debug\net6.0\Hash.AssemblyInfo.cs
+C:\Users\thalita.paz\Documents\Exercicios POO\Hash\Hash\obj\Debug\net6.0\Hash.csproj.CoreCompileInputs.cache
+C:\Users\thalita.paz\Documents\Exercicios POO\Hash\Hash\obj\Debug\net6.0\Hash.dll
+C:\Users\thalita.paz\Documents\Exercicios POO\Hash\Hash\obj\Debug\net6.0\refint\Hash.dll
+C:\Users\thalita.paz\Documents\Exercicios POO\Hash\Hash\obj\Debug\net6.0\Hash.pdb
+C:\Users\thalita.paz\Documents\Exercicios POO\Hash\Hash\obj\Debug\net6.0\Hash.genruntimeconfig.cache
+C:\Users\thalita.paz\Documents\Exercicios POO\Hash\Hash\obj\Debug\net6.0\ref\Hash.dll
