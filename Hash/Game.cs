@@ -16,23 +16,24 @@ namespace Hash
         {
             player0 = 0;
             player1 = 1;
-            round = 0;
+            round = 2;
         }
 
         public void Match(Board Board)
         {
-            
-            string player;
-            if (round % 2 == 0) player = "Jogador 1";
-            else player = "Jogador 2";
+            int player = round % 2;
+            round++;
+            string Splayer;
+            if (player == 0) Splayer = "Jogador 1 (o)";
+            else Splayer = "Jogador 2 (x)";
 
-            Console.WriteLine("\n\n" + player + " escolha a linha e a coluna respectivamente");
+            Console.WriteLine("\n\n" + Splayer + " escolha a linha e a coluna respectivamente");
             int row = Convert.ToInt32(Console.ReadLine());
             int column = Convert.ToInt32(Console.ReadLine());
 
-            Board.Change(row-1, column-1);
-            Board.Print(round++);
-            Board.Checks();
+            Board.Change(row-1, column-1,player);
+            Board.Print();
+            if (Board.Checks() == 0) this.Match(Board);
         }
     }
 }

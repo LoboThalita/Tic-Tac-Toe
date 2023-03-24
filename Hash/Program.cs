@@ -3,9 +3,11 @@ using Hash;
 
 Game play = new Game();
 
-Console.WriteLine("Bem-vindo ao jogo da velha\n\n");
-
 Board Board = new Board();
 
-Board.Print(0);
+Board.Print();
 play.Match(Board);
+
+if (Board.Checks() == 1) Console.WriteLine("Jogador um Venceu!!");
+if (Board.Checks() == 2) Console.WriteLine("Jogador dois Venceu!!");
+if (Board.Checks() == 3) Console.WriteLine("Empate");
