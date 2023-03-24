@@ -9,13 +9,9 @@ namespace Hash
     public class Game
     {
         public static int round { get; private set; }
-        public int player0 { get; private set; }
-        public int player1 { get; private set; }
 
         public Game()
         {
-            player0 = 0;
-            player1 = 1;
             round = 2;
         }
 
