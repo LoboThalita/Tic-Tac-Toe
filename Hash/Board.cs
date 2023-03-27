@@ -52,28 +52,64 @@ namespace Hash
                 }
                 else if (ChecksColumns(i))
                 {
-                    result = BoardMatrix[i, 0];
+                    result = BoardMatrix[0,i];
                     break;
                 }
-                else if (i == j++)
+                else if (ChecksMainDiagonal())
                 {
-                    diagonal++;
-                    if (diagonal == 3)
-                    {
-                        result = 3;
-                    }
+                    result = BoardMatrix[i, i];
+                    break;
+                }
+                else if (ChecksSecondaryDiagonal())
+                {
+                    result = BoardMatrix[2, 0];
+                    break;
+                }
+                else if (CheckTie())
+                {
+                    result = 3;
+                    break;
                 }
             }
             return result;
         }
 
+        private bool CheckTie()
+        {
+            int check = 0;
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    if (BoardMatrix[i, j] != 0) check++;
+                }
+            }
+            if (check == 9) return true;
+            else return false;
+        }
+
+        private bool ChecksSecondaryDiagonal()
+        {
+            return BoardMatrix[2, 0] == BoardMatrix[1, 1] && BoardMatrix[1, 1] == BoardMatrix[0, 2] && BoardMatrix[2, 0] != 0;
+        }
+
+        private bool ChecksMainDiagonal()
+        {
+            return BoardMatrix[0,0] == BoardMatrix[1,1] && BoardMatrix[1,1] == BoardMatrix[2,2] && BoardMatrix[0,0] != 0;
+        }
+
         private bool ChecksRows(int i)
         {
-            return BoardMatrix[i, 0] == BoardMatrix[i, 1] && BoardMatrix[i, 1] == BoardMatrix[i, 2];
+            return BoardMatrix[i, 0] == BoardMatrix[i, 1] && BoardMatrix[i, 1] == BoardMatrix[i, 2] && BoardMatrix[i, 0] != 0;
         }
         private bool ChecksColumns(int i)
         {
-            return BoardMatrix[0, i] == BoardMatrix[1, i] && BoardMatrix[1, i] == BoardMatrix[2, i];
+            return BoardMatrix[0, i] == BoardMatrix[1, i] && BoardMatrix[1, i] == BoardMatrix[2, i] && BoardMatrix[0, i] != 0;
+        }
+
+        public int[,] Set()
+        {
+            return BoardMatrix;
         }
     }
 }
