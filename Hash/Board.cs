@@ -40,7 +40,7 @@ namespace Hash
 
         public int Checks()
         {
-            int result =0, diagonal = 0;
+            int result =0;
             for (int i = 0; i < 3; i++)
             {
                 int j = 0;
